@@ -13,7 +13,7 @@ const PRODUCT_LINES = [
     forWho: "For teams making a big infrastructure purchase.",
     href: "/marketplace?line=PoC+Engagements",
     tile: "01",
-    tileClass: "from-rose-500/80 to-red-700/80",
+    tileClass: "from-[#162FB4] to-[#1C0087]",
   },
   {
     name: "Self-Service Labs",
@@ -24,7 +24,7 @@ const PRODUCT_LINES = [
     forWho: "For engineers who want to kick the tires first.",
     href: "/marketplace?line=Self-Service+Labs",
     tile: "02",
-    tileClass: "from-emerald-500/80 to-teal-700/80",
+    tileClass: "from-[#0086EA] to-[#1C0087]",
   },
   {
     name: "ATC Cloud",
@@ -35,7 +35,7 @@ const PRODUCT_LINES = [
     forWho: "For teams that want full control without owning hardware.",
     href: "/marketplace?line=ATC+Cloud",
     tile: "03",
-    tileClass: "from-sky-400/80 to-cyan-700/80",
+    tileClass: "from-[#0086EA] to-[#162FB4]",
   },
   {
     name: "Lab Hosting",
@@ -46,7 +46,7 @@ const PRODUCT_LINES = [
     forWho: "For companies tired of running their own lab space.",
     href: "/marketplace?line=Lab+Hosting",
     tile: "04",
-    tileClass: "from-slate-500/80 to-zinc-700/80",
+    tileClass: "from-[#1D1E48] to-[#162FB4]",
   },
   {
     name: "Cyber Range",
@@ -57,7 +57,7 @@ const PRODUCT_LINES = [
     forWho: "For security teams that practice like they play.",
     href: "/marketplace?line=Cyber+Range",
     tile: "05",
-    tileClass: "from-orange-500/80 to-amber-700/80",
+    tileClass: "from-[#FB550E] to-[#E31C79]",
   },
   {
     name: "Intelligence",
@@ -68,7 +68,7 @@ const PRODUCT_LINES = [
     forWho: "For buyers who want the data before the demo.",
     href: "/marketplace?line=Intelligence",
     tile: "06",
-    tileClass: "from-indigo-500/80 to-blue-800/80",
+    tileClass: "from-[#162FB4] to-[#1C0087]",
   },
   {
     name: "Partner Program",
@@ -79,7 +79,7 @@ const PRODUCT_LINES = [
     forWho: "For OEMs who want to be where decisions get made.",
     href: "/marketplace?line=Partner+Program",
     tile: "07",
-    tileClass: "from-amber-500/80 to-yellow-700/80",
+    tileClass: "from-[#FB550E] to-[#EE282A]",
   },
 ];
 
@@ -117,29 +117,30 @@ const PRICING_MODELS = [
 export default function Home() {
   return (
     <div className="space-y-20">
-      {/* Hero */}
-      <section className="pt-10 text-center">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-          WWT Advanced Technology Center
+      {/* Hero — signature WWT radial gradient: Royal Blue spotlight fading to Navy */}
+      <section
+        className="rounded-2xl px-8 py-14 text-white sm:px-12"
+        style={{ background: "radial-gradient(ellipse 80% 120% at 30% 20%, #162FB4 0%, #1D1E48 65%)" }}
+      >
+        <p className="mb-3 text-sm font-semibold text-white/80">
+          World Wide Technology · Advanced Technology Center
         </p>
-        <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-          Test technology before you buy it.
-          <br />
-          On our billion-dollar lab, not your network.
+        <h1 className="max-w-3xl text-4xl font-light leading-tight tracking-tight sm:text-5xl">
+          Test technology before you buy it. On our billion-dollar lab, not your network.
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted">
+        <p className="mt-5 max-w-2xl text-lg text-white/80">
           Seven products. Four simple ways to pay. Every result backed by evidence and signed by an engineer.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-8 flex flex-wrap gap-3">
           <Link
             href="/marketplace"
-            className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            className="rounded-lg bg-accent px-6 py-3 text-sm font-bold text-white transition-opacity hover:opacity-90"
           >
             Browse all products
           </Link>
           <Link
             href="/request/new"
-            className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-panel2"
+            className="rounded-lg border border-white/40 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
           >
             Start a PoC request
           </Link>
@@ -148,8 +149,8 @@ export default function Home() {
 
       {/* Product lines */}
       <section>
-        <h2 className="text-center text-2xl font-bold tracking-tight">What you can buy</h2>
-        <p className="mt-2 text-center text-muted">Seven product lines. Pick the one that sounds like you.</p>
+        <h2 className="text-2xl font-bold tracking-tight text-accent">What you can buy</h2>
+        <p className="mt-2 text-muted">Seven product lines. Pick the one that sounds like you.</p>
         <div className="mt-8 space-y-4">
           {PRODUCT_LINES.map((p) => (
             <Link
@@ -186,8 +187,8 @@ export default function Home() {
 
       {/* Pricing models */}
       <section>
-        <h2 className="text-center text-2xl font-bold tracking-tight">How you pay</h2>
-        <p className="mt-2 text-center text-muted">
+        <h2 className="text-2xl font-bold tracking-tight text-accent">How you pay</h2>
+        <p className="mt-2 text-muted">
           Four pricing models. Every product uses exactly one — no fine print.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -201,7 +202,7 @@ export default function Home() {
               <p className="mt-2 text-sm font-medium text-ink/90">{m.simple}</p>
               <p className="mt-1.5 text-sm text-muted">{m.detail}</p>
               <p className="mt-4 border-t border-line pt-3 text-xs text-muted">
-                <span className="font-semibold uppercase tracking-wide">Example: </span>
+                <span className="font-semibold">Example: </span>
                 {m.example}
               </p>
               <span className="mt-3 text-sm font-semibold text-accent group-hover:underline">
@@ -214,15 +215,15 @@ export default function Home() {
 
       {/* Three steps */}
       <section className="rounded-xl border border-line bg-panel p-8">
-        <h2 className="text-center text-2xl font-bold tracking-tight">And it&apos;s this simple</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-accent">And it&apos;s this simple</h2>
         <div className="mx-auto mt-8 grid max-w-4xl gap-6 sm:grid-cols-3">
           {[
             ["1", "Pick a product", "Browse the marketplace or describe what you need in plain language."],
             ["2", "We do the work", "Real tests on real hardware in our lab — you watch progress live."],
             ["3", "You get the answer", "A signed report with evidence behind every result. Yours to keep."],
           ].map(([n, t, b]) => (
-            <div key={n} className="text-center">
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-accent text-base font-bold text-white">
+            <div key={n} className="">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-base font-bold text-white">
                 {n}
               </div>
               <div className="mt-3 font-semibold">{t}</div>
@@ -230,7 +231,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm text-muted">
+        <p className="mt-8 text-sm text-muted">
           Trusted infrastructure: 20,000+ VMs · 600+ ready-built labs · 6,000+ completed engagements · 200+
           technology vendors on the floor
         </p>

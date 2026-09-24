@@ -1,4 +1,4 @@
-# ATC.ai — The De-Risking Layer
+# ATC Portal — The De-Risking Layer
 
 Productization layer over WWT's Advanced Technology Center, built to the direction in
 [CLAUDE.md](./CLAUDE.md): expose the proving ground the ATC already runs internally

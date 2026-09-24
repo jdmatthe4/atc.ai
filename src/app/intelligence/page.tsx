@@ -40,7 +40,7 @@ function OemCard({ oem, records }: { oem: string; records: OutcomeRecord[] }) {
       </div>
       {a.topFailures.length > 0 && (
         <div className="mt-4 text-xs text-muted">
-          <div className="mb-1 font-semibold uppercase tracking-wide">Most common failure modes</div>
+          <div className="mb-1 font-semibold">Most common failure modes</div>
           <ul className="space-y-1">
             {a.topFailures.map(([mode, count]) => (
               <li key={mode}>
@@ -82,8 +82,8 @@ export default async function IntelligencePage({
   return (
     <div className="space-y-8">
       <div>
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">ATC Intelligence</p>
-        <h1 className="text-2xl font-bold tracking-tight">
+        <p className="mb-2 text-xs font-semibold text-accent">ATC Intelligence</p>
+        <h1 className="text-2xl font-bold tracking-tight text-accent">
           What actually held up — across {outcomes.length.toLocaleString()} adjudicated tests
         </h1>
         <p className="mt-2 max-w-3xl text-sm text-muted">
@@ -155,7 +155,7 @@ export default async function IntelligencePage({
             <div className="mt-4 overflow-x-auto rounded-xl border border-line">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+                  <tr className="border-b border-line bg-panel text-left text-xs text-muted">
                     <th className="px-4 py-3 font-medium">Workload</th>
                     <th className="px-4 py-3 font-medium">{a} pass rate</th>
                     <th className="px-4 py-3 font-medium">{b} pass rate</th>

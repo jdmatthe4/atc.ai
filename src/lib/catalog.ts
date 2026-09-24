@@ -51,7 +51,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Start request",
     tile: "PV",
-    tileClass: "from-sky-500/80 to-blue-700/80",
+    tileClass: "from-[#0086EA] to-[#162FB4]",
   },
   {
     id: "poc-compare",
@@ -71,7 +71,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Start request",
     tile: "PC",
-    tileClass: "from-rose-500/80 to-red-700/80",
+    tileClass: "from-[#162FB4] to-[#1C0087]",
   },
   {
     id: "poc-bakeoff",
@@ -90,7 +90,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Start request",
     tile: "EB",
-    tileClass: "from-violet-500/80 to-purple-700/80",
+    tileClass: "from-[#8212C4] to-[#330072]",
   },
   {
     id: "explorer-aipg",
@@ -110,7 +110,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Launch sandbox",
     tile: "AI",
-    tileClass: "from-emerald-500/80 to-teal-700/80",
+    tileClass: "from-[#0086EA] to-[#1C0087]",
   },
   {
     id: "explorer-evpn",
@@ -129,7 +129,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Launch lab",
     tile: "NF",
-    tileClass: "from-cyan-500/80 to-sky-700/80",
+    tileClass: "from-[#162FB4] to-[#330072]",
   },
   {
     id: "explorer-zt",
@@ -148,7 +148,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Launch sandbox",
     tile: "ZT",
-    tileClass: "from-orange-500/80 to-amber-700/80",
+    tileClass: "from-[#FB550E] to-[#E31C79]",
   },
   {
     id: "explorer-storage",
@@ -167,7 +167,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Launch lab",
     tile: "ST",
-    tileClass: "from-lime-500/80 to-green-700/80",
+    tileClass: "from-[#8212C4] to-[#162FB4]",
   },
   {
     id: "cloud-vdc",
@@ -187,7 +187,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Create environment",
     tile: "AC",
-    tileClass: "from-sky-400/80 to-cyan-700/80",
+    tileClass: "from-[#0086EA] to-[#162FB4]",
   },
   {
     id: "hosting-dedicated",
@@ -207,7 +207,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Request hosting quote",
     tile: "LH",
-    tileClass: "from-slate-500/80 to-zinc-700/80",
+    tileClass: "from-[#1D1E48] to-[#162FB4]",
   },
   {
     id: "hosting-managed",
@@ -226,7 +226,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Request hosting quote",
     tile: "LM",
-    tileClass: "from-stone-400/80 to-slate-700/80",
+    tileClass: "from-[#330072] to-[#1D1E48]",
   },
   {
     id: "range-livefire",
@@ -246,7 +246,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Book event",
     tile: "LF",
-    tileClass: "from-red-500/80 to-rose-800/80",
+    tileClass: "from-[#E31C79] to-[#8212C4]",
   },
   {
     id: "range-seats",
@@ -265,7 +265,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Buy seats",
     tile: "CR",
-    tileClass: "from-fuchsia-500/80 to-pink-700/80",
+    tileClass: "from-[#E31C79] to-[#330072]",
   },
   {
     id: "intel-enterprise",
@@ -285,7 +285,7 @@ export const LISTINGS: Listing[] = [
     href: "/intelligence",
     cta: "View product",
     tile: "IQ",
-    tileClass: "from-indigo-500/80 to-blue-800/80",
+    tileClass: "from-[#162FB4] to-[#1C0087]",
   },
   {
     id: "intel-oem",
@@ -304,7 +304,7 @@ export const LISTINGS: Listing[] = [
     href: "/intelligence",
     cta: "View product",
     tile: "OB",
-    tileClass: "from-slate-400/80 to-slate-700/80",
+    tileClass: "from-[#1D1E48] to-[#330072]",
   },
   {
     id: "partner-program",
@@ -323,7 +323,7 @@ export const LISTINGS: Listing[] = [
     href: "/request/new",
     cta: "Contact program desk",
     tile: "PP",
-    tileClass: "from-amber-500/80 to-yellow-700/80",
+    tileClass: "from-[#FB550E] to-[#EE282A]",
   },
 ];
 

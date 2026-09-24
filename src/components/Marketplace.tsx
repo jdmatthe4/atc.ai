@@ -37,7 +37,7 @@ function FilterGroup({
 }) {
   return (
     <div className="border-b border-line pb-4">
-      <div className="mb-2 text-xs font-bold uppercase tracking-wide text-muted">{title}</div>
+      <div className="mb-2 text-xs font-bold text-muted">{title}</div>
       <ul className="space-y-1.5">
         {options.map((o) => (
           <li key={o}>
@@ -173,7 +173,7 @@ export function Marketplace({
     <div>
       {/* Search band */}
       <div className="rounded-xl border border-line bg-panel p-5">
-        <h1 className="text-xl font-bold tracking-tight">ATC.ai Marketplace</h1>
+        <h1 className="text-xl font-bold tracking-tight text-accent">ATC Portal Marketplace</h1>
         <p className="mt-0.5 text-sm text-muted">
           Buy proving-ground capacity, PoC engagements, and decision intelligence — 600+ capabilities, 200+
           OEMs, no services engagement required.

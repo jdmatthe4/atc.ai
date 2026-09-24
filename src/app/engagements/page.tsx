@@ -36,7 +36,7 @@ export default function EngagementsPage() {
     <div className="space-y-10">
       {anyActive && <AutoRefresh />}
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold tracking-tight">Engagements</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-accent">Engagements</h1>
         <Link
           href="/request/new"
           className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
@@ -59,7 +59,7 @@ export default function EngagementsPage() {
           <div className="mt-4 overflow-x-auto rounded-xl border border-line">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+                <tr className="border-b border-line bg-panel text-left text-xs text-muted">
                   <th className="px-4 py-3 font-medium">Engagement</th>
                   <th className="px-4 py-3 font-medium">Organization</th>
                   <th className="px-4 py-3 font-medium">Domains</th>
@@ -107,7 +107,7 @@ export default function EngagementsPage() {
         <div className="mt-4 overflow-x-auto rounded-xl border border-line">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+              <tr className="border-b border-line bg-panel text-left text-xs text-muted">
                 <th className="px-4 py-3 font-medium">Order</th>
                 <th className="px-4 py-3 font-medium">Organization</th>
                 <th className="px-4 py-3 font-medium">Product</th>

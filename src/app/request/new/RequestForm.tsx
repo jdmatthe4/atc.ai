@@ -66,7 +66,7 @@ export function RequestForm() {
       </label>
 
       <div>
-        <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted">Or start from an example</div>
+        <div className="mb-2 text-xs font-medium text-muted">Or start from an example</div>
         <div className="flex flex-wrap gap-2">
           {EXAMPLES.map((ex) => (
             <button

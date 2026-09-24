@@ -43,7 +43,7 @@ function CaseRow({ tc, showProgress }: { tc: TestCase; showProgress: boolean }) 
             ))}
           </ol>
           <p>
-            <span className="text-xs font-semibold uppercase tracking-wide text-muted">Expected: </span>
+            <span className="text-xs font-semibold text-muted">Expected: </span>
             {tc.expected}
           </p>
           <div className="overflow-x-auto rounded-md border border-line">
@@ -72,7 +72,7 @@ function CaseRow({ tc, showProgress }: { tc: TestCase; showProgress: boolean }) 
       </details>
       {verdict && tc.status === "complete" && (
         <div className="mt-3 rounded-md border border-line bg-panel p-3 text-sm">
-          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted">
+          <div className="mb-1 text-xs font-semibold text-muted">
             {tc.finalVerdict
               ? `Verdict — approved by ${tc.finalVerdict.approvedBy}`
               : "Verdict proposed by Atom adjudicator — pending engineer approval"}
@@ -109,7 +109,7 @@ export default async function EngagementPage({ params }: { params: Promise<{ id:
 
       <div>
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-bold tracking-tight">{e.plan.title}</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-accent">{e.plan.title}</h1>
           <StatusBadge status={e.status} />
         </div>
         <p className="mt-1 text-sm text-muted">

@@ -50,7 +50,7 @@ function CasesTable({ cases }: { cases: SupportCase[] }) {
     <div className="overflow-x-auto rounded-xl border border-line">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+          <tr className="border-b border-line bg-panel text-left text-xs text-muted">
             <th className="px-4 py-3 font-medium">Status</th>
             <th className="px-4 py-3 font-medium">Case</th>
             <th className="px-4 py-3 font-medium">Requested by</th>
@@ -136,11 +136,11 @@ export default async function HostedLabPage({
       </div>
       <div className="mt-4 flex flex-col justify-between gap-6 sm:flex-row sm:items-start">
         <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight">{HOSTED_LAB.name}</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-accent">{HOSTED_LAB.name}</h1>
           <p className="mt-3 text-sm leading-relaxed text-muted">{HOSTED_LAB.description}</p>
         </div>
         <div className="flex h-24 w-48 shrink-0 items-center justify-center rounded-xl border border-line bg-panel">
-          <span className="text-center text-sm font-bold uppercase tracking-widest">
+          <span className="text-center text-sm font-boldst">
             Acme <span className="text-accent">Financial</span>
           </span>
         </div>
@@ -284,14 +284,14 @@ export default async function HostedLabPage({
               <div className="mt-1 text-xs text-muted">idle units available for scheduling</div>
             </div>
             <div className="rounded-xl border border-line bg-panel p-5">
-              <div className="text-3xl font-bold text-accent">{money(idleCostYr)}</div>
+              <div className="text-3xl font-bold text-red">{money(idleCostYr)}</div>
               <div className="mt-1 text-xs text-muted">annualized idle-capacity cost</div>
             </div>
           </div>
           <div className="overflow-x-auto rounded-xl border border-line">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+                <tr className="border-b border-line bg-panel text-left text-xs text-muted">
                   <th className="px-4 py-3 font-medium">Asset class</th>
                   <th className="px-4 py-3 font-medium">Units</th>
                   <th className="px-4 py-3 font-medium">Idle</th>
@@ -460,7 +460,7 @@ export default async function HostedLabPage({
           <div className="overflow-x-auto rounded-xl border border-line">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-line bg-panel text-left text-xs uppercase tracking-wide text-muted">
+                <tr className="border-b border-line bg-panel text-left text-xs text-muted">
                   <th className="px-4 py-3 font-medium">Member</th>
                   <th className="px-4 py-3 font-medium">Role</th>
                   <th className="px-4 py-3 font-medium">Organization</th>
@@ -479,7 +479,7 @@ export default async function HostedLabPage({
                     <td className="px-4 py-3">
                       <span
                         className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
-                          m.org === "WWT" ? "bg-accent/15 text-accent" : "bg-info/15 text-info"
+                          m.org === "WWT" ? "bg-red/15 text-red" : "bg-info/15 text-info"
                         }`}
                       >
                         {m.org === "WWT" ? "World Wide Technology" : HOSTED_LAB.account}

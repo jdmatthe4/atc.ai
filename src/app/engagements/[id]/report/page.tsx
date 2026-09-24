@@ -36,10 +36,10 @@ export default async function ReportPage({ params }: { params: Promise<{ id: str
   return (
     <div className="mx-auto max-w-4xl space-y-8">
       <div className="rounded-xl border border-line bg-panel p-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+        <p className="text-xs font-semibold text-accent">
           Signed, vendor-neutral PoC report
         </p>
-        <h1 className="mt-2 text-2xl font-bold tracking-tight">{e.plan.title}</h1>
+        <h1 className="mt-2 text-2xl font-bold tracking-tight text-accent">{e.plan.title}</h1>
         <p className="mt-2 text-sm text-muted">
           Prepared for {e.org} · engagement <span className="font-mono text-xs">{e.id}</span> · delivered{" "}
           {when(e.deliveredAt)}
@@ -50,7 +50,7 @@ export default async function ReportPage({ params }: { params: Promise<{ id: str
             <div className="text-xs text-muted">passed</div>
           </div>
           <div className="bg-panel2 p-4">
-            <div className="text-2xl font-bold text-accent">{tally.fail}</div>
+            <div className="text-2xl font-bold text-red">{tally.fail}</div>
             <div className="text-xs text-muted">failed</div>
           </div>
           <div className="bg-panel2 p-4">
@@ -78,7 +78,7 @@ export default async function ReportPage({ params }: { params: Promise<{ id: str
                 </div>
                 <p className="mt-2 text-sm text-muted">{tc.finalVerdict?.rationale}</p>
                 <div className="mt-3 text-xs text-muted">
-                  <div className="mb-1 font-semibold uppercase tracking-wide">Cited evidence</div>
+                  <div className="mb-1 font-semibold">Cited evidence</div>
                   <ul className="space-y-1">
                     {tc.finalVerdict?.evidence.map((ev, j) => (
                       <li key={j}>

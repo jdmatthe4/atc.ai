@@ -3,7 +3,7 @@ import { Marketplace } from "@/components/Marketplace";
 import { PRICING_MODELS, PRODUCT_LINES } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "Marketplace — ATC.ai",
+  title: "Marketplace — ATC Portal",
 };
 
 export default async function MarketplacePage({

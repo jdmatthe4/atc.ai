@@ -22,13 +22,13 @@ export function StatusBadge({ status }: { status: EngagementStatus }) {
 
 const VERDICT_STYLES: Record<VerdictOutcome, string> = {
   pass: "bg-pass/15 text-pass",
-  fail: "bg-accent/15 text-accent",
+  fail: "bg-red/15 text-red",
   inconclusive: "bg-warn/15 text-warn",
 };
 
 export function VerdictBadge({ outcome, proposed }: { outcome: VerdictOutcome; proposed?: boolean }) {
   return (
-    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide ${VERDICT_STYLES[outcome]}`}>
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${VERDICT_STYLES[outcome]}`}>
       {proposed ? `${outcome} (proposed)` : outcome}
     </span>
   );
